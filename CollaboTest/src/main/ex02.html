@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+ <script>
+        // 1. 사용자에게 원하는 색상을 입력 받는다
+        // 2.'색깔을 적어주세요!(빨강,초록,파랑)'
+
+        // 2. 빨강=> console창에 '빨강입니다'
+        //          초록=>'초록입니다'파랑=>'파랑입니다'
+        //           =>'잘못입력하셨습니다'
+
+
+        let col=prompt('원하는 색(빨강,파랑,초록)')
+
+        if(col==='빨강'){
+            console.log('빨강입니다')
+            document.getElementsByTagName('body')[0].style.backgroundColor='red'
+        }else if(col==='파랑'){
+            console.log('파랑입니다')
+            document.getElementsByTagName('body')[0].style.backgroundColor='blue'
+        }else if(col==='초록'){
+            console.log('초록입니다')
+            document.getElementsByTagName('body')[0].style.backgroundColor='green'
+
+        }else{
+            alert('잘못입력')
+        }
+    </script>
+</body>
+</html>
